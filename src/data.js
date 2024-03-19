@@ -18,7 +18,7 @@ export { HeroDark as Dark };
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "delta619";
 
 // Navbar Logo image
 export const navLogo = undefined;
@@ -108,3 +108,4 @@ export const projectCardImages = [
   https://formspree.io/
 */
 export const formspreeUrl = "https://formspree.io/f/YourEndpoint";
+export const linkedinURL = "https://www.linkedin.com/in/ashutoshmalla";

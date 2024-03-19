@@ -4,6 +4,7 @@ import { selectData } from "../pages/homeSlice";
 import styled from "styled-components";
 // Data
 import { Blog } from "../data";
+import { linkedinURL } from "../data";
 // Icons
 import { Icon } from '@iconify/react';
 
