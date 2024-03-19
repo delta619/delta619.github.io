@@ -24,7 +24,7 @@ export const githubUsername = "delta619";
 export const navLogo = undefined;
 
 // Blog link icon - https://icon-sets.iconify.design/
-export const Blog = <Icon icon="ph:link-bold" />;
+export const Blog = <Icon icon="skill-icons:linkedin" />;
 
 /* About Me
  **************************************************************
