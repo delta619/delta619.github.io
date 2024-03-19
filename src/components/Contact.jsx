@@ -22,8 +22,11 @@ export default function Contact() {
           </Title>
         </Container>
         <Container>
-          <ContactForm />
-        </Container>
+  {/* div in the middle */}
+  <div style={{ textAlign: 'center' }}>
+    <span>amalla2@usfca.edu</span>
+  </div>
+</Container>
       </StyledSection>
     </Element>
   );

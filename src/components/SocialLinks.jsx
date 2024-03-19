@@ -24,7 +24,7 @@ export default function SocialLinks() {
         aria-label="Check out my GitHub profile."
         className="link-icons"
       >
-        <Icon icon="icomoon-free:github" />
+        <Icon icon="line-md:github-loop" />
       </a>
       {blog && (
         <a href={linkedinURL} aria-label="External link" className="link-icons">

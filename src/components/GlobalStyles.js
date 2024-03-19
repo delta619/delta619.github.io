@@ -37,7 +37,7 @@ a:hover {
 
   img {
     background: ${({ theme }) =>
-      theme.name === "light" ? "#45413C" : "#797B7B"};
+      theme.name === "light" ? "transparent" : "transparent"};
   }
 }
 

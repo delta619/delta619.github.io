@@ -24,7 +24,7 @@ export const githubUsername = "delta619";
 export const navLogo = undefined;
 
 // Blog link icon - https://icon-sets.iconify.design/
-export const Blog = <Icon icon="skill-icons:linkedin" />;
+export const Blog = <Icon icon="line-md:linkedin" />
 
 /* About Me
  **************************************************************
@@ -40,23 +40,23 @@ export const moreInfo =
 export const skillData = [
   {
     id: 1,
-    skill: <Icon icon="mdi:language-html5" className="display-4" />,
-    name: "HTML5",
+    skill: <Icon icon="fontisto:aws"  className="display-4" />,
+    name: "AWS",
   },
   {
     id: 2,
-    skill: <Icon icon="ion:logo-css3" className="display-4" />,
-    name: "CSS3",
+    skill: <Icon icon="file-icons:serverless" className="display-4" />,
+    name: "Serverless",
   },
   {
     id: 3,
-    skill: <Icon icon="fa6-brands:js" className="display-4" />,
-    name: "JavaScript",
+    skill: <Icon icon="fa6-brands:golang"  className="display-4" />,
+    name: "Golang",
   },
   {
     id: 4,
-    skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
-    name: "BootStrap",
+    skill: <Icon icon="teenyicons:javascript-solid"  className="display-4" />,
+    name: "Javascript",
   },
   {
     id: 5,
@@ -65,23 +65,23 @@ export const skillData = [
   },
   {
     id: 6,
-    skill: <Icon icon="file-icons:styledcomponents" className="display-4" />,
+    skill: <Icon icon="fontisto:sass"  className="display-4" />,
     name: "Styled Components",
   },
   {
     id: 7,
-    skill: <Icon icon="akar-icons:redux-fill" className="display-4" />,
-    name: "Redux",
+    skill: <Icon icon="typcn:html5"  className="display-4" />,
+    name: "HTML5",
   },
   {
     id: 8,
-    skill: <Icon icon="bi:git" className="display-4" />,
-    name: "Git",
+    skill: <Icon icon="devicon-plain:django"  className="display-4" />,
+    name: "Django",
   },
   {
     id: 9,
-    skill: <Icon icon="fa6-brands:square-github" className="display-4" />,
-    name: "GitHub",
+    skill: <Icon icon="devicon-plain:postgresql" className="display-4" />,
+    name: "Postgres",
   },
 ];
 

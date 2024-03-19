@@ -7,6 +7,7 @@ import { moreInfo } from "../data";
 // Components
 import { Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
+import ashuPic from '../images/ashu_pic.jpg'; // Assuming the image is located at '../images/ashu_pic.jpg'
 
 const StyledAboutMe = styled.section`
   p {
@@ -26,13 +27,13 @@ export default function AboutMe() {
       <StyledAboutMe className="section">
         <Container>
           <Container className="d-flex">
+          </Container>
+          <Row className="align-items-center mt-5">
+            <Col className="d-flex flex-column text-center">
             <Title>
               <h2>About Me</h2>
               <div className="underline"></div>
             </Title>
-          </Container>
-          <Row className="align-items-center mt-5">
-            <Col className="d-flex flex-column text-center">
               <Container>
                 <p>{bio}</p>
                 {moreInfo && <p>{moreInfo}</p>}

@@ -11,6 +11,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 // Images
 import Logo from "./defaultNavLogo.svg";
 
+
 // #region styled-components
 const StyledSwitch = styled.label`
   /* Slider pill */
@@ -112,7 +113,7 @@ export default function NavBar({ Logo }) {
               src={Logo}
               width="35"
               height="35"
-              className="rounded-circle"
+              className=""
             />
           </Navbar.Brand>
           <Navbar.Toggle

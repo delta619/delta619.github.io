@@ -93,13 +93,6 @@ export default function Hero() {
               <SocialLinks />
             </div>
           </Col>
-          <Col className="d-none d-md-block">
-            <img
-              src={Logo}
-              alt="React Logo"
-              className="w-75 mx-auto hero-img"
-            />
-          </Col>
         </Row>
         <Row className="align-items-end down-container">
           <Col className="m-4 text-center">
