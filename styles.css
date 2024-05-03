@@ -1,0 +1,83 @@
+body {
+  background: linen;
+  background-size: cover;
+  font-family: 'Courier Prime', monospace;
+  font-weight: lighter;
+
+}
+
+.container {
+  display: inline-block;
+}
+
+.typed-out {
+  overflow: hidden;
+  white-space: nowrap;
+  animation:
+    typing 1s steps(20, end) forwards;
+  font-size: 1.6rem;
+  width: 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 1px;
+  margin-top: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+
+.profile-image {
+  width: 200px;
+  /* Adjust the size as needed */
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  /* Adjust the margin as needed */
+}
+
+
+
+.profile-image:hover {
+  cursor: pointer;
+}
+
+.hearts-container {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #CCC;
+
+}
+
+
+@keyframes heartAnimation {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  20% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
