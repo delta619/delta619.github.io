@@ -8,9 +8,9 @@ body {
 
 .typed-out {
   overflow: hidden;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   animation:
-    typing 1s steps(20, end) forwards;
+    typing 2s steps(20, end) forwards;
   font-size: 1.6rem;
   width: 0;
 }
@@ -29,7 +29,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 1rem;
 
 }
 
