@@ -7,7 +7,7 @@ $('.profile-image').mouseenter(function () {
 
   // Create "I am Batman" message
   const message = document.createElement('div');
-  message.textContent = "I am Batman";
+  message.textContent = "I am the real Batman";
   message.style.position = 'fixed';
   message.style.top = '20px'; // Position it 20px from the top
   message.style.right = '20px'; // Position it 20px from the right
