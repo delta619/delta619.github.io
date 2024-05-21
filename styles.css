@@ -6,10 +6,6 @@ body {
 
 }
 
-.container {
-  display: inline-block;
-}
-
 .typed-out {
   overflow: hidden;
   white-space: nowrap;
@@ -28,15 +24,28 @@ body {
     width: 100%
   }
 }
-
-.container {
+.view{
   display: flex;
   justify-content: center;
-  padding: 1px;
-  margin-top: 1rem;
   align-items: center;
-  width: 100%;
+  flex-direction: column;
+  margin-top: 1rem;
+
 }
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.img_shades {
+  position: absolute;
+  top: 30%; 
+  left: 46%; 
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure the shades are on top of the profile image */
+}
+
 
 
 .profile-image {
@@ -44,9 +53,18 @@ body {
   /* Adjust the size as needed */
   height: 200px;
   border-radius: 50%;
-  object-fit: cover;
+  /* object-fit: cover; */
   margin-right: 20px;
   /* Adjust the margin as needed */
+
+}
+
+
+
+.img_shades{
+  width: 100px;
+  height: 55px;
+  visibility:hidden
 }
 
 
@@ -80,4 +98,21 @@ body {
     transform: scale(0);
     opacity: 0;
   }
+}
+
+
+.social-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.social-icons a {
+  margin-left: 10px;
+  font-size: 24px;
+  color: black;
+}
+
+.social-icons a:hover {
+  color: black;
 }

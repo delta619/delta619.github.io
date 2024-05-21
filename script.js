@@ -1,27 +1,30 @@
-const profileImage = document.querySelector('.profile-image');
-const heartsContainer = document.querySelector('.hearts-container');
-const shadesOverlay = document.querySelector('.shades-overlay');
+$('.profile-image').mouseenter(function () {
+  // Show the shades
+  $('.img_shades').css('visibility', 'visible');
 
-profileImage.addEventListener('click', () => {
-  createHeart();
-  shadesOverlay.style.opacity = shadesOverlay.style.opacity === '1' ? '0' : '1';
+  // Get the dimensions and position of the profile image
+  const profileImageRect = this.getBoundingClientRect();
 
+  // Create "I am Batman" message
+  const message = document.createElement('div');
+  message.textContent = "I am Batman";
+  message.style.position = 'fixed';
+  message.style.top = '20px'; // Position it 20px from the top
+  message.style.right = '20px'; // Position it 20px from the right
+  message.style.fontSize = '24px';
+  message.style.color = 'white';
+  message.style.backgroundColor = 'black';
+  message.style.padding = '10px';
+  message.style.borderRadius = '5px';
+  message.style.zIndex = '9999';
+  document.body.appendChild(message);
+
+  setTimeout(() => {
+      message.remove();
+  }, 2000);
 });
 
-function createHeart() {
-  const heart = document.createElement('span');
-  heart.textContent = '🍕';
-  heart.style.position = 'absolute';
-  heart.style.left = `${Math.random() * window.innerWidth}px`;
-  heart.style.top = `${Math.random() * window.innerHeight}px`;
-  heart.style.fontSize = `${Math.random() * 50 + 20}px`;
-  heart.style.color = `hsl(${Math.random() * 360}, 100%, 50%)`;
-  heart.style.animationName = 'heartAnimation';
-  heart.style.animationDuration = `${Math.random() * 2 + 2}s`;
-  heartsContainer.appendChild(heart);
-
-//   setTimeout(() => {
-//     heart.remove();
-//   }, 4000);
-}
-
+$('.profile-image').mouseleave(function () {
+  // Hide the shades
+  $('.img_shades').css('visibility', 'hidden');
+});
