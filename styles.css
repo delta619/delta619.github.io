@@ -130,7 +130,6 @@ body {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  transform: rotate(-20deg) translate(2rem)
 }
 
 .multicolor-border-btn:hover {
