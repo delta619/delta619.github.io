@@ -4,182 +4,291 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | delta619</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./project_style.css">
-
-
-    <title>Ashutosh Malla | delta619</title>
 </head>
 
 <body>
 
-    <div class="container">
-        <img src="./images/about.jpg" alt="Your Image" class="profile-image">
-        <img src="./images/sunglasses.png" alt="Shades" class="img_shades">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="/" class="nav-logo">delta619<span class="accent">.</span></a>
+        <ul class="nav-links">
+            <li><a href="/">about</a></li>
+            <li><a href="/#skills">skills</a></li>
+            <li><a href="projects.html" class="active">projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Projects -->
+    <main class="projects-main">
+        <h1 class="section-title">projects<span class="accent">.</span></h1>
+        <p class="section-sub">Things I've built — from distributed systems to ML models to Chrome extensions.</p>
+
+        <div class="project-grid">
+
+            <!-- 1 -->
+            <article class="project-card">
+                <div class="card-header">
+                    <h3><a href="https://github.com/delta619/kubernetes-subdomain-multi-app" target="_blank">
+                        Kubernetes Subdomain Multi App
+                    </a></h3>
+                    <div class="card-links">
+                        <a href="https://github.com/delta619/kubernetes-subdomain-multi-app" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="card-desc">
+                    Designed a Kubernetes template using Helm, CMake, and nginx-ingress to deploy multiple
+                    SSL/TLS authenticated services on the same domain with different subdomains.
+                </p>
+                <div class="tech-tags">
+                    <span class="tag">Kubernetes</span>
+                    <span class="tag">Helm</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">nginx</span>
+                </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="project-card">
+                <div class="card-header">
+                    <h3><a href="https://github.com/delta619/concurrency_drawing" target="_blank">
+                        Doodle Concurrency Collab
+                    </a></h3>
+                    <div class="card-links">
+                        <a href="https://github.com/delta619/concurrency_drawing" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://concurrency-drawing-ui.vercel.app/" target="_blank" title="Live Demo">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="card-desc">
+                    Designed and implemented a long-polling mechanism for live multi-client doodle as live
+                    event streaming and publishing.
+                </p>
+                <div class="tech-tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Redis</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">AngularJS</span>
+                    <span class="tag">Kubernetes</span>
+                </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="project-card">
+                <div class="card-header">
+                    <h3><a href="https://github.com/delta619/Pokemon_pytorch_CNN_multi_label" target="_blank">
+                        Pokemon CNN AI Classifier
+                    </a></h3>
+                    <div class="card-links">
+                        <a href="https://github.com/delta619/Pokemon_pytorch_CNN_multi_label" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="card-desc">
+                    PyTorch CNN model that predicts Pokémon types from images using multi-label classification.
+                    Trained on a curated dataset with advanced neural network configurations and optimisation techniques.
+                </p>
+                <div class="tech-tags">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">CNN</span>
+                    <span class="tag">ML</span>
+                </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="project-card">
+                <div class="card-header">
+                    <h3><a href="https://github.com/delta619/bitly_clone_sprintboot" target="_blank">
+                        Bitly Clone — Spring Boot
+                    </a></h3>
+                    <div class="card-links">
+                        <a href="https://github.com/delta619/bitly_clone_sprintboot" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="card-desc">
+                    URL shortening and redirection service built with Spring Boot. Scalable, containerised,
+                    and deployed on Kubernetes with a PostgreSQL backend.
+                </p>
+                <div class="tech-tags">
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Kubernetes</span>
+                    <span class="tag">PostgreSQL</span>
+                </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="project-card">
+                <div class="card-header">
+                    <h3><a href="https://github.com/delta619/auto_mate_token_refresh" target="_blank">
+                        Auto Mate Token
+                    </a></h3>
+                    <div class="card-links">
+                        <a href="https://github.com/delta619/auto_mate_token_refresh" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="card-desc">
+                    Python script using the requests library to automate OAuth token refreshing, ensuring
+                    uninterrupted access to protected websites without manual intervention.
+                </p>
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Bash</span>
+                    <span class="tag">OAuth</span>
+                </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="project-card">
+                <div class="card-header">
+                    <h3><a href="https://github.com/delta619/chrome_extension_todays_tasks" target="_blank">
+                        Chrome Extension — Today's Tasks
+                    </a></h3>
+                    <div class="card-links">
+                        <a href="https://github.com/delta619/chrome_extension_todays_tasks" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="card-desc">
+                    ADHD-friendly Chrome extension with a simplified interface for effortless daily task
+                    management. Minimises distractions and streamlines productivity.
+                </p>
+                <div class="tech-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Chrome API</span>
+                    <span class="tag">SASS</span>
+                </div>
+            </article>
+
+            <!-- 7 -->
+            <article class="project-card">
+                <div class="card-header">
+                    <h3><a href="https://github.com/delta619/isp-network-compression" target="_blank">
+                        ISP Network Compression Detector
+                    </a></h3>
+                    <div class="card-links">
+                        <a href="https://github.com/delta619/isp-network-compression" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="card-desc">
+                    Identifies and analyses data compression techniques within ISP network traffic,
+                    providing insights into compression efficiency for network optimisation.
+                </p>
+                <div class="tech-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">Networking</span>
+                </div>
+            </article>
+
+            <!-- 8 -->
+            <article class="project-card">
+                <div class="card-header">
+                    <h3><a href="https://github.com/delta619/go-dfs" target="_blank">
+                        Distributed File System in Go
+                    </a></h3>
+                    <div class="card-links">
+                        <a href="https://github.com/delta619/go-dfs" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="card-desc">
+                    HDFS-inspired DFS built from scratch. Segments files into chunks distributed across
+                    nodes for fault tolerance, with a controller-node architecture and replication management.
+                </p>
+                <div class="tech-tags">
+                    <span class="tag">Golang</span>
+                    <span class="tag">Distributed Systems</span>
+                    <span class="tag">HDFS</span>
+                </div>
+            </article>
+
+            <!-- 9 -->
+            <article class="project-card">
+                <div class="card-header">
+                    <h3><a href="https://github.com/delta619/USF-gig-club" target="_blank">
+                        USF Gig Club
+                    </a></h3>
+                    <div class="card-links">
+                        <a href="https://github.com/delta619/USF-gig-club" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="card-desc">
+                    University platform enabling users to post gigs (lost &amp; found, services) alongside
+                    real-time chat. Enhances campus communication and collaboration.
+                </p>
+                <div class="tech-tags">
+                    <span class="tag">AngularJS</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Socket.io</span>
+                </div>
+            </article>
+
+            <!-- 10 -->
+            <article class="project-card">
+                <div class="card-header">
+                    <h3><a href="https://missionheartfoundation.com/" target="_blank">
+                        Mission Heart Foundation
+                    </a></h3>
+                    <div class="card-links">
+                        <a href="https://missionheartfoundation.com/" target="_blank" title="Live Site">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="card-desc">
+                    Non-profit platform dedicated to curing congenital heart diseases in children across
+                    India, driven by Dr. Robin Pinto's cardiology expertise and philanthropic mission.
+                </p>
+                <div class="tech-tags">
+                    <span class="tag">AngularJS</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Non-profit</span>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <div class="back-home">
+        <a href="/">← back to home</a>
     </div>
 
-
-    <!-- create a table with project name and description -->
-    <table class="project-table">
-        <tr>
-            <th>Project Name</th>
-            <th>Tech</th>
-
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/delta619/kubernetes-subdomain-multi-app">Kubernetes subdomain Multi App</a>
-            </td>
-            <td>
-                <img src="https://img.icons8.com/color/50/kubernetes">
-                <img src="https://img.icons8.com/color/50/docker">
-                <img src="https://img.icons8.com/color/50/000000/nginx.png">
-                <img src="https://helm.sh/img/helm.svg" alt="Helm" class="logo">
-
-
-
-            </td>
-            <td> Designed a kubernetes template using Helm, Cmake and nginx-ingress to deploy multiple ssl tsl
-                authenticated services on same domain and different subdomains..</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/delta619/concurrency_drawing">Doodle concurrency collab</a> - <span><a
-                        href="https://concurrency-drawing-ui.vercel.app/" target="_blank">Demo</a></span></td>
-            <td>
-                <img src="https://img.icons8.com/color/50/kubernetes">
-                <img src="https://img.icons8.com/color/50/docker">
-
-                <img src="https://img.icons8.com/fluency/50/node-js">
-                <img src="https://img.icons8.com/color/50/redis">
-                <img src="https://img.icons8.com/fluency/50/angularjs">
-            </td>
-            <td> Designed and implemented a long poling mechanism for live multi-client doodle as live event streaming
-                and publishing.</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/delta619/Pokemon_pytorch_CNN_multi_label">Pokemon CNN AI type classifier</a>
-            </td>
-            <td>
-                <img src="https://img.icons8.com/fluency/50/pytorch">
-                <img src="https://img.icons8.com/fluency/50/python">
-
-            </td>
-
-            <td> Developed a PyTorch CNN model, this project predicts the types of Pokémon from images, leveraging
-                multi-label classification. Trained on a meticulously curated dataset, the model achieves high accuracy
-                in identifying diverse Pokémon types, aided by advanced neural network configurations and optimization
-                techniques</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/delta619/bitly_clone_sprintboot">Bitly clone - springboot</a></td>
-            <td>
-                <img src="https://img.icons8.com/color/50/kubernetes">
-                <img src="https://img.icons8.com/color/50/docker">
-                <img src="https://img.icons8.com/color/50/spring-logo">
-                <img src="https://img.icons8.com/color/50/postgreesql">
-
-            </td>
-            <td>Created a Bitly clone using Spring Boot, this project enables URL shortening and redirection
-                functionalities. Leveraging Spring's robust features, it offers a scalable and efficient solution for
-                managing shortened URLs with ease.</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/delta619/auto_mate_token_refresh">Auto Mate token</a></td>
-            <td>
-                <img src="https://img.icons8.com/color/50/python">
-                <img src="https://img.icons8.com/color/50/bash">
-            </td>
-
-            <td>Launched a Python script utilizing the requests library, this project automates token refreshing for
-                websites, streamlining authentication processes. By seamlessly handling token renewal, it ensures
-                uninterrupted access to protected access to websites without manual intervention.</td>
-        </tr>
-
-        <tr>
-            <td><a href="https://github.com/delta619/chrome_extension_todays_tasks">Chrome Extension - Today's tasks</a>
-            </td>
-            <td>
-                <img src="https://img.icons8.com/color/50/javascript">
-                <img src="https://img.icons8.com/color/50/chrome">
-                <img src="https://img.icons8.com/color/50/sass">
-
-            </td>
-
-            <td>Tailored for individuals with ADHD, this Chrome extension provides a simplified interface and intuitive
-                features for effortlessly jotting down daily tasks. Designed to minimize distractions and streamline
-                task management, it offers a user-friendly solution to enhance productivity for users with ADHD.</td>
-        </tr>
-
-        <tr>
-            <td><a href="https://github.com/delta619/isp-network-compression">ISP network compression detector</a></td>
-            <td>
-                <img width="64" height="64" src="https://img.icons8.com/external-others-iconmarket/64/external-cpp-file-types-others-iconmarket-2.png" alt="external-cpp-file-types-others-iconmarket-2"/>
-            </td>
-
-            <td>Developing an ISP network compression detector, this project aims to identify and analyze data
-                compression techniques employed within network traffic. By leveraging advanced algorithms, it offers
-                insights into compression efficiency, aiding network optimization and performance enhancement.</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/delta619/go-dfs">Distributed file procesisng system in GOlang</a></td>
-            <td>
-                <img src="https://img.icons8.com/color/50/golang">
-            </td>
-
-            <td>Designed and developed a Distributed File System (DFS) akin to Hadoop's HDFS from scratch, this project
-                segments files into chunks and distributes them across multiple nodes for fault tolerance. Utilizing a
-                controller-node architecture, it facilitates seamless file retrieval and replication factor management
-                for robust data handling.</td>
-        </tr>
-        <tr>
-            <td><a href="https://github.com/delta619/USF-gig-club">USF gig club</a></td>
-            <td>
-                <img src="https://img.icons8.com/color/50/angularjs">
-                <img src="https://img.icons8.com/fluency/50/node-js">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" alt="Socket.io" style="width:50px;height:50px;">
-                
-            </td>
-
-            <td>Launched a university app enabling users to post gigs such as lost and found items, alongside real-time
-                chat functionality. Enhancing campus communication, the platform fosters collaboration and swift
-                resolution of inquiries</td>
-        </tr>
-        <tr>
-            <td><a href="https://missionheartfoundation.com/">Mission Heart Foundation</a></td>
-            <td>
-                <img src="https://img.icons8.com/color/50/angularjs">
-                <img src="https://img.icons8.com/fluency/50/node-js">
-                
-            </td>
-
-            <td>I spearheaded the development of Mission Heart Foundation, a non-profit platform dedicated to curing
-                congenital heart diseases in children across India. Our mission is fueled by Dr. Robin Pinto's expertise
-                in cardiology and Cherylann Pinto's passion for philanthropy and CSR, aiming to provide quality care and
-                support for underprivileged children.</td>
-        </tr>
-
-
-
-        <!-- Add more rows as needed -->
-    </table>
-    <span><a href="/index">Thanks for reading. Click here to go to home page</a> </span>
+    <!-- Social icons -->
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/ashutoshmalla" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/delta619" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://medium.com/@deltareaper619" target="_blank" title="Medium">
+            <i class="fab fa-medium"></i>
+        </a>
+    </div>
 
     <script src="script.js"></script>
-    <!-- LinkedIn and GitHub icons -->
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/ashutoshmalla" target="_blank" class="linkedin"><i
-                class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/delta619" target="_blank" class="github"><i class="fab fa-github"></i></a>
-        <a href="https://medium.com/@deltareaper619" target="_blank" class="github"><i class="fab fa-medium"></i></a>
-    </div>
-
 </body>
 
 </html>

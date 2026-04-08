@@ -4,93 +4,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashutosh Malla | delta619</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0Z9N0HWJ1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-B0Z9N0HWJ1');
     </script>
-
-
-    <title>Ashutosh Malla | delta619</title>
 </head>
 
-<body class="view">
+<body>
 
-    <div class="container">
-        <img src="./images/about.jpg" alt="Your Image" class="profile-image">
-        <img src="./images/sunglasses.png" alt="Shades" class="img_shades">
-    </div>
-    <div class="projects-icon">
-        <button class="multicolor-border-btn"><a href="/projects.html" style="text-decoration: none; color: inherit">Click here to access my past projects.</a></button>
-    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="/" class="nav-logo">delta619<span class="accent">.</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="projects.html">projects</a></li>
+        </ul>
+    </nav>
 
-    <div class="containerx">
+    <!-- Hero -->
+    <section class="hero" id="about">
+        <div class="hero-photo-wrap">
+            <img src="./images/about.jpg" alt="Ashutosh Malla" class="profile-image">
+            <img src="./images/sunglasses.png" alt="Shades" class="img_shades">
+        </div>
 
-        <div class="typed-out">I'm Ashutosh<br></br>
-            <div class="c1">
-                <div class="typed-out">I look human from outside, from the inside i am a convolutional neural network
-                    trained with 2<sup>8</sup> CUDA cores which supports quick learning on any new technology or quick
-                    implementation of new stack. </div> 
+        <h1>Hi, I'm <span class="accent">Ashutosh</span></h1>
+
+        <p class="typewriter-line">
+            <span id="typewriter"></span><span class="cursor">|</span>
+        </p>
+
+        <p class="hero-bio">
+            Backend &amp; DevOps engineer specialising in <span class="accent">Kubernetes</span>,
+            containerised systems, real-time collaboration, and distributed architecture.
+            MS in CS @ University of San Francisco.
+        </p>
+
+        <div class="tag-row">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Python</span>
+            <span class="tag">Golang</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Node.js</span>
+        </div>
+
+        <div class="cta-row">
+            <a href="projects.html" class="btn-primary">View Projects</a>
+            <a href="https://medium.com/@deltareaper619" target="_blank" class="btn-outline">Blog</a>
+        </div>
+    </section>
+
+    <!-- Terminal / whoami -->
+    <div class="terminal-section">
+        <div class="terminal">
+            <div class="terminal-bar">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="terminal-title">~/ whoami</span>
             </div>
-            </br>
-
-            <div class="c1">
-                <div class="typed-out">Always up for Pizzas, Movies, Sports !!!</div>
-
-                <div class="typed-out">Recently graduated. MS in CS @ University of San Francisco</div>
+            <div class="terminal-body">
+                <p>
+                    <span class="prompt">$</span>
+                    I look human from outside — from the inside I'm a convolutional neural network
+                    trained with 2<sup>8</sup> CUDA cores, capable of quick learning on any new technology.
+                </p>
+                <p>
+                    <span class="prompt">$</span>
+                    3+ years in <span class="accent">(JavaScript, Python, Golang, Postgres).yaml → on AWS</span>
+                </p>
+                <p>
+                    <span class="prompt">$</span>
+                    Specialised in containerised backend development in Kubernetes, webhooks, payment
+                    integration, databases, async parallelism, and real-time collaboration.
+                </p>
+                <p>
+                    <span class="prompt">$</span>
+                    Tech blogging on <a href="https://medium.com/@deltareaper619" target="_blank">Medium</a>
+                    &nbsp;·&nbsp; Long drives &nbsp;·&nbsp; Road trips &nbsp;·&nbsp; Food &nbsp;·&nbsp; Trek events
+                </p>
+                <p>
+                    <span class="prompt">$</span>
+                    Always up for Pizzas, Movies, Sports &nbsp;🎯
+                </p>
+                <p style="margin-top: 0.4rem;">
+                    <span class="prompt">$</span>
+                    <span class="accent">amalla2@usfca.edu</span>
+                    &nbsp;—&nbsp; Let's build something together.
+                </p>
             </div>
-
-            </br>
-            <div class="c1">
-                <div class="typed-out"><b>Specialised in containerized backend development in kubernetes, Webhooks, payment integration</div>
-                <div class="typed-out">Databses, Async parallelism, concurrency processing for real-time collaboration.</b></div>
-            </div>
-            <br>
-            <div class="c1">
-                <div class="typed-out">I am doing tech blogging on <a href="https://medium.com/@deltareaper619">Medium</a> to share
-                    what i am working on, with the world.</div>
-                <div class="typed-out">Long drives, road trips, food exploration, trek event hosting, some of the
-                    things i do for fun.</div>
-            </div>
-
-            <br>
-            <div class="c1">
-                <div class="typed-out">3+ yrs in (Javascript, Python, Golang, Postgres).yaml -> on AWS</div>
-                <br>
-                <div class="typed-out" style="color:sienna">Email for inquiries <b>amalla2@usfca.edu</b></div>
-                <div class="typed-out">Let's build something together.</div>
-            </div>
-
-
-
-
-
         </div>
     </div>
 
-    <div class="hearts-container">
-    </div>
+    <!-- Skills -->
+    <section class="skills-section" id="skills">
+        <h2 class="section-title">skills<span class="accent">.</span></h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fab fa-docker"></i>
+                <span>Docker</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-aws"></i>
+                <span>AWS</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-angular"></i>
+                <span>Angular</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>PostgreSQL</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-terminal"></i>
+                <span>Bash</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-dharmachakra"></i>
+                <span class="skill-label">K8s</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <span class="skill-label">Go</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-server"></i>
+                <span class="skill-label">Redis</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-java"></i>
+                <span>Spring</span>
+            </div>
+        </div>
+    </section>
 
-    <!-- LinkedIn and GitHub icons -->
+    <!-- Social icons -->
     <div class="social-icons">
-        <a href="https://www.linkedin.com/in/ashutoshmalla" target="_blank" class="linkedin"><i
-                class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/delta619" target="_blank" class="github"><i class="fab fa-github"></i></a>
-        <a href="https://medium.com/@deltareaper619" target="_blank" class="github"><i class="fab fa-medium"></i></a>
+        <a href="https://www.linkedin.com/in/ashutoshmalla" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/delta619" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://medium.com/@deltareaper619" target="_blank" title="Medium">
+            <i class="fab fa-medium"></i>
+        </a>
     </div>
-
 
     <script src="script.js"></script>
 </body>

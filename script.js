@@ -1,29 +1,86 @@
-$('.profile-image').mouseenter(function () {
-  // Show the shades
-  $('.img_shades').css('visibility', 'visible');
+// ===========================
+// Batman Easter Egg
+// ===========================
+const profileImg = document.querySelector('.profile-image');
+const shades = document.querySelector('.img_shades');
 
-  // Get the dimensions and position of the profile image
-  const profileImageRect = this.getBoundingClientRect();
+if (profileImg) {
+    profileImg.addEventListener('mouseenter', () => {
+        if (shades) shades.style.visibility = 'visible';
 
-  // Create "I am Batman" message
-  const message = document.createElement('div');
-  message.style.position = 'fixed';
-  message.style.top = '20px'; // Position it 20px from the top
-  message.style.right = '20px'; // Position it 20px from the right
-  message.style.fontSize = '24px';
-  message.style.color = 'white';
-  message.style.backgroundColor = 'black';
-  message.style.padding = '10px';
-  message.style.borderRadius = '5px';
-  message.style.zIndex = '9999';
-  document.body.appendChild(message);
+        const popup = document.createElement('div');
+        popup.className = 'batman-popup';
+        popup.textContent = '🦇 I am Batman.';
+        document.body.appendChild(popup);
 
-  setTimeout(() => {
-      message.remove();
-  }, 2000);
-});
+        setTimeout(() => popup.remove(), 2000);
+    });
 
-$('.profile-image').mouseleave(function () {
-  // Hide the shades
-  $('.img_shades').css('visibility', 'hidden');
+    profileImg.addEventListener('mouseleave', () => {
+        if (shades) shades.style.visibility = 'hidden';
+    });
+}
+
+// ===========================
+// Typewriter Effect (index only)
+// ===========================
+const typewriterEl = document.getElementById('typewriter');
+
+if (typewriterEl) {
+    const phrases = [
+        'backend engineer.',
+        'kubernetes wrangler.',
+        'distributed systems nerd.',
+        'open source contributor.',
+        'pizza & code enthusiast.',
+        'tech blogger on Medium.',
+    ];
+
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function tick() {
+        const current = phrases[phraseIndex];
+
+        if (isDeleting) {
+            typewriterEl.textContent = current.slice(0, --charIndex);
+        } else {
+            typewriterEl.textContent = current.slice(0, ++charIndex);
+        }
+
+        if (!isDeleting && charIndex === current.length) {
+            // Pause at end of phrase before deleting
+            setTimeout(() => {
+                isDeleting = true;
+                tick();
+            }, 1800);
+            return;
+        }
+
+        if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            // Pause before typing next phrase
+            setTimeout(tick, 400);
+            return;
+        }
+
+        setTimeout(tick, isDeleting ? 40 : 80);
+    }
+
+    tick();
+}
+
+// ===========================
+// Smooth scroll for anchor links
+// ===========================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', e => {
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
 });
