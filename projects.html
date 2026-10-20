@@ -8,38 +8,40 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
-<body>
+<body class="projects-page">
+    <a class="skip-link" href="#main">Skip to content</a>
 
     <!-- Navbar -->
-    <nav class="navbar">
-        <a href="/" class="nav-logo">delta619<span class="accent">.</span></a>
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">delta619<span class="accent">.</span></a>
         <ul class="nav-links">
-            <li><a href="/">about</a></li>
-            <li><a href="/#skills">skills</a></li>
+            <li><a href="index.html">about</a></li>
+            <li><a href="index.html#skills">skills</a></li>
             <li><a href="projects.html" class="active">projects</a></li>
         </ul>
     </nav>
 
     <!-- Projects -->
-    <main class="projects-main">
-        <h1 class="section-title">projects<span class="accent">.</span></h1>
+    <main class="projects-main" id="main">
+        <p class="eyebrow">THE PROJECT ARCHIVE</p>
+        <h1 class="section-title">Ideas into<span class="accent"> reality.</span></h1>
         <p class="section-sub">Things I've built — from distributed systems to ML models to Chrome extensions.</p>
 
         <div class="project-grid">
 
             <!-- 1 -->
-            <article class="project-card">
+            <article class="project-card" data-tilt>
                 <div class="card-header">
-                    <h3><a href="https://github.com/delta619/kubernetes-subdomain-multi-app" target="_blank">
+                    <h3><a href="https://github.com/delta619/kubernetes-subdomain-multi-app" target="_blank" rel="noopener noreferrer">
                         Kubernetes Subdomain Multi App
                     </a></h3>
                     <div class="card-links">
-                        <a href="https://github.com/delta619/kubernetes-subdomain-multi-app" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
+                        <a href="https://github.com/delta619/kubernetes-subdomain-multi-app" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -56,16 +58,16 @@
             </article>
 
             <!-- 2 -->
-            <article class="project-card">
+            <article class="project-card" data-tilt>
                 <div class="card-header">
-                    <h3><a href="https://github.com/delta619/concurrency_drawing" target="_blank">
+                    <h3><a href="https://github.com/delta619/concurrency_drawing" target="_blank" rel="noopener noreferrer">
                         Doodle Concurrency Collab
                     </a></h3>
                     <div class="card-links">
-                        <a href="https://github.com/delta619/concurrency_drawing" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
+                        <a href="https://github.com/delta619/concurrency_drawing" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
-                        <a href="https://concurrency-drawing-ui.vercel.app/" target="_blank" title="Live Demo">
+                        <a href="https://concurrency-drawing-ui.vercel.app/" target="_blank" rel="noopener noreferrer" title="Live Demo" aria-label="Live Demo">
                             <i class="fas fa-external-link-alt"></i>
                         </a>
                     </div>
@@ -84,14 +86,14 @@
             </article>
 
             <!-- 3 -->
-            <article class="project-card">
+            <article class="project-card" data-tilt>
                 <div class="card-header">
-                    <h3><a href="https://github.com/delta619/Pokemon_pytorch_CNN_multi_label" target="_blank">
+                    <h3><a href="https://github.com/delta619/Pokemon_pytorch_CNN_multi_label" target="_blank" rel="noopener noreferrer">
                         Pokemon CNN AI Classifier
                     </a></h3>
                     <div class="card-links">
-                        <a href="https://github.com/delta619/Pokemon_pytorch_CNN_multi_label" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
+                        <a href="https://github.com/delta619/Pokemon_pytorch_CNN_multi_label" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -108,14 +110,14 @@
             </article>
 
             <!-- 4 -->
-            <article class="project-card">
+            <article class="project-card" data-tilt>
                 <div class="card-header">
-                    <h3><a href="https://github.com/delta619/bitly_clone_sprintboot" target="_blank">
+                    <h3><a href="https://github.com/delta619/bitly_clone_sprintboot" target="_blank" rel="noopener noreferrer">
                         Bitly Clone — Spring Boot
                     </a></h3>
                     <div class="card-links">
-                        <a href="https://github.com/delta619/bitly_clone_sprintboot" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
+                        <a href="https://github.com/delta619/bitly_clone_sprintboot" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -132,14 +134,14 @@
             </article>
 
             <!-- 5 -->
-            <article class="project-card">
+            <article class="project-card" data-tilt>
                 <div class="card-header">
-                    <h3><a href="https://github.com/delta619/auto_mate_token_refresh" target="_blank">
+                    <h3><a href="https://github.com/delta619/auto_mate_token_refresh" target="_blank" rel="noopener noreferrer">
                         Auto Mate Token
                     </a></h3>
                     <div class="card-links">
-                        <a href="https://github.com/delta619/auto_mate_token_refresh" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
+                        <a href="https://github.com/delta619/auto_mate_token_refresh" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -155,14 +157,14 @@
             </article>
 
             <!-- 6 -->
-            <article class="project-card">
+            <article class="project-card" data-tilt>
                 <div class="card-header">
-                    <h3><a href="https://github.com/delta619/chrome_extension_todays_tasks" target="_blank">
+                    <h3><a href="https://github.com/delta619/chrome_extension_todays_tasks" target="_blank" rel="noopener noreferrer">
                         Chrome Extension — Today's Tasks
                     </a></h3>
                     <div class="card-links">
-                        <a href="https://github.com/delta619/chrome_extension_todays_tasks" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
+                        <a href="https://github.com/delta619/chrome_extension_todays_tasks" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -178,14 +180,14 @@
             </article>
 
             <!-- 7 -->
-            <article class="project-card">
+            <article class="project-card" data-tilt>
                 <div class="card-header">
-                    <h3><a href="https://github.com/delta619/isp-network-compression" target="_blank">
+                    <h3><a href="https://github.com/delta619/isp-network-compression" target="_blank" rel="noopener noreferrer">
                         ISP Network Compression Detector
                     </a></h3>
                     <div class="card-links">
-                        <a href="https://github.com/delta619/isp-network-compression" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
+                        <a href="https://github.com/delta619/isp-network-compression" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -200,14 +202,14 @@
             </article>
 
             <!-- 8 -->
-            <article class="project-card">
+            <article class="project-card" data-tilt>
                 <div class="card-header">
-                    <h3><a href="https://github.com/delta619/go-dfs" target="_blank">
+                    <h3><a href="https://github.com/delta619/go-dfs" target="_blank" rel="noopener noreferrer">
                         Distributed File System in Go
                     </a></h3>
                     <div class="card-links">
-                        <a href="https://github.com/delta619/go-dfs" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
+                        <a href="https://github.com/delta619/go-dfs" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -223,14 +225,14 @@
             </article>
 
             <!-- 9 -->
-            <article class="project-card">
+            <article class="project-card" data-tilt>
                 <div class="card-header">
-                    <h3><a href="https://github.com/delta619/USF-gig-club" target="_blank">
+                    <h3><a href="https://github.com/delta619/USF-gig-club" target="_blank" rel="noopener noreferrer">
                         USF Gig Club
                     </a></h3>
                     <div class="card-links">
-                        <a href="https://github.com/delta619/USF-gig-club" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
+                        <a href="https://github.com/delta619/USF-gig-club" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -246,13 +248,13 @@
             </article>
 
             <!-- 10 -->
-            <article class="project-card">
+            <article class="project-card" data-tilt>
                 <div class="card-header">
-                    <h3><a href="https://missionheartfoundation.com/" target="_blank">
+                    <h3><a href="https://missionheartfoundation.com/" target="_blank" rel="noopener noreferrer">
                         Mission Heart Foundation
                     </a></h3>
                     <div class="card-links">
-                        <a href="https://missionheartfoundation.com/" target="_blank" title="Live Site">
+                        <a href="https://missionheartfoundation.com/" target="_blank" rel="noopener noreferrer" title="Live Site" aria-label="Live Site">
                             <i class="fas fa-external-link-alt"></i>
                         </a>
                     </div>
@@ -272,18 +274,18 @@
     </main>
 
     <div class="back-home">
-        <a href="/">← back to home</a>
+        <a href="index.html">← back to home</a>
     </div>
 
     <!-- Social icons -->
     <div class="social-icons">
-        <a href="https://www.linkedin.com/in/ashutoshmalla" target="_blank" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/ashutoshmalla" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
             <i class="fab fa-linkedin"></i>
         </a>
-        <a href="https://github.com/delta619" target="_blank" title="GitHub">
-            <i class="fab fa-github"></i>
+        <a href="https://github.com/delta619" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+            <i class="fab fa-github" aria-hidden="true"></i>
         </a>
-        <a href="https://medium.com/@deltareaper619" target="_blank" title="Medium">
+        <a href="https://medium.com/@deltareaper619" target="_blank" rel="noopener noreferrer" title="Medium" aria-label="Medium">
             <i class="fab fa-medium"></i>
         </a>
     </div>

@@ -1,86 +1,61 @@
-// ===========================
-// Batman Easter Egg
-// ===========================
-const profileImg = document.querySelector('.profile-image');
-const shades = document.querySelector('.img_shades');
+// Motion is progressive enhancement; content remains visible without JavaScript.
+(() => {
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+    const surfaces = [...document.querySelectorAll('[data-tilt]')];
+    const scene = document.querySelector('.scene');
+    const hero = document.querySelector('.hero');
+    let frame = 0;
+    let activeSurface = null;
+    let pointerX = 0;
+    let pointerY = 0;
 
-if (profileImg) {
-    profileImg.addEventListener('mouseenter', () => {
-        if (shades) shades.style.visibility = 'visible';
-
-        const popup = document.createElement('div');
-        popup.className = 'batman-popup';
-        popup.textContent = '🦇 I am Batman.';
-        document.body.appendChild(popup);
-
-        setTimeout(() => popup.remove(), 2000);
-    });
-
-    profileImg.addEventListener('mouseleave', () => {
-        if (shades) shades.style.visibility = 'hidden';
-    });
-}
-
-// ===========================
-// Typewriter Effect (index only)
-// ===========================
-const typewriterEl = document.getElementById('typewriter');
-
-if (typewriterEl) {
-    const phrases = [
-        'backend engineer.',
-        'kubernetes wrangler.',
-        'distributed systems nerd.',
-        'open source contributor.',
-        'pizza & code enthusiast.',
-        'tech blogger on Medium.',
-    ];
-
-    let phraseIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-
-    function tick() {
-        const current = phrases[phraseIndex];
-
-        if (isDeleting) {
-            typewriterEl.textContent = current.slice(0, --charIndex);
-        } else {
-            typewriterEl.textContent = current.slice(0, ++charIndex);
+    function render() {
+        frame = 0;
+        if (reducedMotion.matches) return;
+        if (activeSurface && finePointer.matches) {
+            const bounds = activeSurface.getBoundingClientRect();
+            const strength = activeSurface === scene ? 10 : 4;
+            const x = Math.max(-.5, Math.min(.5, (pointerX - bounds.left) / bounds.width - .5));
+            const y = Math.max(-.5, Math.min(.5, (pointerY - bounds.top) / bounds.height - .5));
+            activeSurface.style.setProperty('--rx', `${-y * strength}deg`);
+            activeSurface.style.setProperty('--ry', `${x * strength}deg`);
         }
-
-        if (!isDeleting && charIndex === current.length) {
-            // Pause at end of phrase before deleting
-            setTimeout(() => {
-                isDeleting = true;
-                tick();
-            }, 1800);
-            return;
+        if (scene && hero && finePointer.matches) {
+            const bounds = hero.getBoundingClientRect();
+            const offset = Math.max(-30, Math.min(30, -bounds.top * .07));
+            scene.style.setProperty('--scroll-y', `${offset}px`);
         }
-
-        if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            phraseIndex = (phraseIndex + 1) % phrases.length;
-            // Pause before typing next phrase
-            setTimeout(tick, 400);
-            return;
-        }
-
-        setTimeout(tick, isDeleting ? 40 : 80);
     }
-
-    tick();
-}
-
-// ===========================
-// Smooth scroll for anchor links
-// ===========================
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', e => {
-        const target = document.querySelector(anchor.getAttribute('href'));
-        if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
+    function schedule() {
+        if (!frame && !reducedMotion.matches) frame = requestAnimationFrame(render);
+    }
+    function reset(surface) {
+        surface.style.removeProperty('--rx');
+        surface.style.removeProperty('--ry');
+        surface.style.removeProperty('--scroll-y');
+    }
+    surfaces.forEach(surface => {
+        surface.addEventListener('pointermove', event => {
+            if (reducedMotion.matches || !finePointer.matches || event.pointerType === 'touch') return;
+            activeSurface = surface;
+            pointerX = event.clientX;
+            pointerY = event.clientY;
+            schedule();
+        });
+        surface.addEventListener('pointerleave', () => {
+            if (activeSurface === surface) activeSurface = null;
+            reset(surface);
+        });
     });
-});
+    function updatePreferences() {
+        activeSurface = null;
+        surfaces.forEach(reset);
+        schedule();
+    }
+    reducedMotion.addEventListener('change', updatePreferences);
+    finePointer.addEventListener('change', updatePreferences);
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule, { passive: true });
+    schedule();
+})();
