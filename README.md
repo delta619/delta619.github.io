@@ -16,9 +16,16 @@ Relative asset and page URLs support root or repository-subpath hosting. Keep `i
 
 ## Content and previews
 
-Project descriptions and links come from the existing portfolio, the delta619/XPtouchbar README, and the linked Daily Excelsior feature dated July 13, 2020. The existing portrait and Toptal résumé URL are reused. The page adds no achievement metrics.
+Project stories are written from the repositories themselves (delta619/go-dfs, concurrency_drawing, concurrency_drawing_ui, chrome_extension_todays_tasks, XPtouchbar, pintnetwork_india_bk) and the Daily Excelsior feature dated July 13, 2020. The two code excerpts are copied from those repositories. `images/portrait.jpg` is a web-sized copy of `images/about.jpg`; `images/todays-tasks-github.jpg` is a store screenshot from the extension repository.
 
-The DFS visualization, drawing canvas, task checklist, and Touch Bar spectrum are illustrative browser-local interactions, not embedded live project backends. The visualizer uses no audio input. Drawing and checklist state reset on reload. Reduced-motion preferences suppress animation; drawing also has keyboard-operable add/clear controls.
+The four demos are browser-local simulations, labelled as such on the page, not live backends:
+
+- Go DFS: heartbeats every 5 s, a 6 s timeout swept every 2 s, three replicas, and placement by `free space / (requests + 1)`, as in `controller.go`.
+- Collaborative Doodle: the 100 ms client batch, server queue, held `/wait` response, and 50 ms-per-point replay. No network calls are made.
+- Todays Tasks: a recreated popup with per-site lists. State resets on reload.
+- XP Touch Bar: a generated signal drawn in four of the app's modes and palettes. No audio is captured.
+
+Reduced-motion preferences stop the animations; the drawing demo has a keyboard-operable sample stroke, and DFS nodes are buttons.
 
 ## Checks
 

@@ -1,15 +1,371 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ashutosh Malla — The Builder’s Lab</title><meta name="description" content="The Builder’s Lab by Ashutosh Malla (delta619). Backend engineering, distributed systems, and useful experiments. Explore projects, résumé, and contact."><link rel="stylesheet" href="styles.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><script src="script.js" defer></script></head>
-<body><a class="skip" href="#main">Skip to content</a><header><a class="signature" href="#">delta619<span>✳</span></a><nav aria-label="Main navigation"><a href="#work">The work</a><a href="#about">The builder</a><a href="#contact">Get in touch ↗</a></nav></header>
-<main id="main"><section class="hero"><div class="hero-copy"><p class="eyebrow"><span class="dot"></span> ASHUTOSH MALLA · SOFTWARE ENGINEER</p><h1>The Builder’s<br><span class="lab">Lab<span class="asterisk" aria-hidden="true">✳</span></span></h1><p class="intro">Serious systems.<br>A playful sense of possibility.</p><p class="summary">I build backend platforms, distributed systems, and small tools that make everyday life a little better. Welcome to my corner of the internet.</p><div class="actions"><a class="button primary" href="#work">Explore the experiments <span>↘</span></a><a class="text-link" href="https://talent.toptal.com/resume/developers/ashutosh-malla" target="_blank" rel="noopener noreferrer">View résumé ↗</a></div></div>
-<div class="lab-board" aria-label="An illustrated notebook of the builder’s work"><div class="board-heading"><span>ON MY WORKBENCH</span><span>001—005</span></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="note code-note"><div class="note-top"><span>~/delta619/lab</span><span>● ● ●</span></div><code><span class="comment">// curiosity → working software</span><br><span class="blue">const</span> builder = {<br>  name: <span class="green">'Ashutosh'</span>,<br>  focus: [<br>    'distributed systems',<br>    'thoughtful experiences'<br>  ],<br>  mindset: <span class="green">'keep building'</span><br>};</code></div><div class="mini-network"><span>01</span><i></i><b>Go</b><i></i><span>02</span></div><div class="sticky">Make it useful.<br>Make it work.<br><em>Then make it better.</em><span>↗</span></div><div class="board-caption"><span class="dot"></span> IDEAS, IN WORKING ORDER.</div></div></section>
-<div class="index-strip"><span>BACKEND × FULL STACK × EXPERIMENTS</span><span>SCROLL TO OPEN THE LAB ↓</span></div>
-<section id="work" class="work"><div class="section-head"><div><p class="eyebrow">01 / SELECTED EXPERIMENTS</p><h2>Less talk.<br><em>More built.</em></h2></div><p>From distributed infrastructure to a little<br>delight on your desktop. Take a look inside.</p></div>
-<div class="projects"><article class="project wide"><div class="preview dfs"><div class="preview-label"><span>EXPERIMENT 001</span><span>INTERACTIVE CONCEPT</span></div><div class="network"><div class="controller">▧<br><strong>Controller</strong><small>file → chunks → nodes</small></div><div class="network-lines"></div><div class="nodes"><div>NODE A <b>▦ ▦</b><small>online</small></div><div id="node-b">NODE B <b>▦ ▦</b><small>online</small></div><div>NODE C <b id="replica">▦ ▦</b><small>online</small></div></div></div><div class="preview-controls"><button id="fail-node" aria-pressed="false">Simulate node failure ↗</button><span id="dfs-status" role="status">Replicas distributed across nodes.</span></div></div><div class="project-copy"><span class="eyebrow">SYSTEMS / GOLANG</span><h3>Go Distributed File System</h3><p>An HDFS-inspired file system built from scratch. Chunk distribution, a controller-node architecture, and replication management for fault tolerance.</p><a class="text-link" href="https://github.com/delta619/go-dfs" target="_blank" rel="noopener noreferrer">Explore the code ↗</a></div></article>
-<article class="project"><div class="preview doodle"><div class="preview-label"><span>EXPERIMENT 002</span><span>DRAW SOMETHING</span></div><svg id="doodle" viewBox="0 0 500 230" role="img" aria-label="Drawing canvas. Drag to draw; use Add a spark for a keyboard-accessible drawing."><path d="M130 153 C90 60 220 40 248 114 C260 50 380 68 354 142 C330 192 230 211 130 153Z" fill="none" stroke="#2358ed" stroke-width="4"/><path d="M200 130 Q235 165 280 128" fill="none" stroke="#2358ed" stroke-width="3"/></svg><div class="preview-controls"><button id="spark">Add a spark ✳</button><button id="clear-doodle">Clear canvas</button><span>Local sketch preview</span></div></div><div class="project-copy"><span class="eyebrow">REAL-TIME / NODE.JS · REDIS</span><h3>Collaborative Doodle</h3><p>One canvas, many minds. Live multi-client drawing built with event streaming and a long-polling backend.</p><div class="links"><a class="text-link" href="https://github.com/delta619/concurrency_drawing" target="_blank" rel="noopener noreferrer">Code ↗</a><a class="text-link" href="https://concurrency-drawing-ui.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo ↗</a></div></div></article>
-<article class="project"><div class="preview tasks"><div class="preview-label"><span>EXPERIMENT 003</span><span>TRY CHECKING ONE OFF</span></div><div class="task-window"><div class="window-top"><span>◉ &nbsp; Todays Tasks</span><span>— &nbsp; ×</span></div><h4>A little focus goes a long way.</h4><label><input type="checkbox" checked><span>Make room for a good idea</span></label><label><input type="checkbox"><span>Build something useful</span></label><label><input type="checkbox"><span>Take a well-earned break</span></label><div id="task-status" role="status">1 of 3 complete · illustrative tasks</div></div></div><div class="project-copy"><span class="eyebrow">PRODUCTIVITY / JAVASCRIPT · CHROME API</span><h3>Todays Tasks</h3><p>A distraction-light Chrome extension for daily task management. A simple interface that keeps attention on what’s next.</p><a class="text-link" href="https://github.com/delta619/chrome_extension_todays_tasks" target="_blank" rel="noopener noreferrer">Code & installation ↗</a></div></article>
-<article class="project"><div class="preview pint"><div class="preview-label"><span>EXPERIMENT 004</span><span>TECH FOR PEOPLE</span></div><div class="pint-art"><span>donor</span><b>♡</b><span>patient</span></div><p>Closing the distance<br>between people who can help.</p><a class="preview-link" href="#press">The story behind PintNetwork ↓</a></div><div class="project-copy"><span class="eyebrow">SOCIAL IMPACT / ANGULAR · NODE.JS · MONGODB</span><h3>PintNetwork</h3><p>A platform connecting plasma donors and COVID-19 patients, with matching and notifications. Built to bridge a real communication gap.</p><a class="text-link" href="https://github.com/delta619/pintnetwork_india_bk" target="_blank" rel="noopener noreferrer">Backend code ↗</a></div></article>
-<article class="project"><div class="preview xp"><div class="preview-label"><span>EXPERIMENT 005</span><span>A LITTLE DESKTOP DELIGHT</span></div><div class="touchbar" id="touchbar" aria-label="Illustrative Touch Bar audio spectrum"></div><div class="xp-caption">Your music. A different kind of screen.</div><div class="preview-controls"><button id="xp-play" aria-pressed="false">Play visualizer ▷</button><button id="xp-theme">Switch palette ◇</button><span>Simulated · no audio</span></div></div><div class="project-copy"><span class="eyebrow">NATIVE / SWIFT · SPRITEKIT</span><h3>XP Touch Bar</h3><p>A real-time audio visualizer for the MacBook Touch Bar. System audio, frequency analysis, and a spectrum of visual modes.</p><div class="links"><a class="text-link" href="https://github.com/delta619/XPtouchbar" target="_blank" rel="noopener noreferrer">Code ↗</a><a class="text-link" href="https://tipsytypes.com/xptouchbar.html" target="_blank" rel="noopener noreferrer">See the app ↗</a></div></div></article></div><a class="archive-link" href="projects.html">More from the archive <span>All projects ↗</span></a></section>
-<section class="press" id="press"><div><p class="eyebrow">BEYOND THE REPOSITORY</p><strong>Daily Excelsior</strong><span>13 JULY 2020 · IN THE PRESS</span></div><div><h2>A connection that mattered.</h2><p>Daily Excelsior featured Ashutosh’s work on PintNetwork, a web application connecting plasma donors and COVID-19 patients in India.</p><a class="text-link" href="https://www.dailyexcelsior.com/jammu-boy-develops-website-to-connect-donors-corona-patients-for-plasma-transfusion/" target="_blank" rel="noopener noreferrer">Read the feature ↗</a></div></section>
-<section id="about" class="about"><div class="portrait"><img src="images/about.jpg" alt="Ashutosh Malla" loading="lazy"><span>THE HUMAN BEHIND delta619 ↗</span></div><div><p class="eyebrow">02 / MEET THE BUILDER</p><h2>Hi, I’m Ashutosh.<br><em>Curiosity is the constant.</em></h2><p>I’m a backend and full-stack engineer working across distributed systems, AWS infrastructure, and API integrations. My work spans hotel platforms, delivery infrastructure, and tools that bring people together.</p><p>I hold an MS in Computer Science from the University of San Francisco. I enjoy the whole journey: understanding a problem, designing the system, and getting the details right.</p><div class="toolkit"><span>Go</span><span>Node.js</span><span>Python</span><span>AWS</span><span>Kafka</span><span>Redis</span><span>Kubernetes</span></div><a class="text-link" href="https://talent.toptal.com/resume/developers/ashutosh-malla" target="_blank" rel="noopener noreferrer">Experience & résumé ↗</a></div></section>
-<section id="contact" class="contact"><p class="eyebrow">03 / THE NEXT GOOD PROBLEM</p><h2>Have something<br>in mind? <em>Let’s build.</em></h2><a class="contact-email" href="mailto:ashutoshjk97@gmail.com">ashutoshjk97@gmail.com ↗</a><div class="contact-links"><a href="https://github.com/delta619" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/ashutoshmalla" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://medium.com/@deltareaper619" target="_blank" rel="noopener noreferrer">Writing ↗</a></div></section></main><footer><a class="signature" href="#">delta619<span>✳</span></a><span>Ashutosh Malla · The Builder’s Lab</span><a href="#">Back to the top ↑</a></footer></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ashutosh Malla — The Builder’s Lab</title>
+  <meta name="description" content="Ashutosh Malla (delta619) is a backend engineer. Notes on five things he built, with small simulations of how each one works, plus résumé and contact.">
+  <meta property="og:title" content="Ashutosh Malla — The Builder’s Lab">
+  <meta property="og:description" content="Backend engineer. Notes on five things I built and how they work.">
+  <meta property="og:image" content="images/portrait.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead wrap">
+  <a class="signature" href="#top" aria-label="delta619, back to top"><svg viewBox="0 0 20 18" aria-hidden="true"><path d="M10 2.2 18 16H2Z"/></svg>delta619</a>
+  <nav aria-label="Main navigation">
+    <a href="#contents">Work</a>
+    <a href="#about">About</a>
+    <a href="https://talent.toptal.com/resume/developers/ashutosh-malla" target="_blank" rel="noopener noreferrer">Résumé</a>
+    <a href="#contact">Email</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="intro wrap" id="top">
+  <h1>Ashutosh Malla</h1>
+
+  <div class="intro-grid">
+    <figure class="portrait">
+      <img src="images/portrait.jpg" width="960" height="960" alt="Portrait of Ashutosh Malla">
+      <figcaption>That’s me. Online I’m usually delta619.</figcaption>
+    </figure>
+
+    <div class="intro-text">
+      <p class="opening">I’m a backend engineer. My working hours go into APIs, event-driven services and the AWS plumbing underneath them, most recently for hotel platforms and delivery infrastructure.</p>
+      <p>This site is the other half. Four things I built because I wanted them to exist, and one because two doctors asked. I’ve written down how each of them works and rebuilt the interesting part as a small simulation you can poke at.</p>
+      <p>If you’re here to hire, the short version is in the box. The <a href="https://talent.toptal.com/resume/developers/ashutosh-malla" target="_blank" rel="noopener noreferrer">résumé</a> has the rest.</p>
+    </div>
+
+    <dl class="card">
+      <div><dt>Does</dt><dd>Backend and platform engineering, distributed systems</dd></div>
+      <div><dt>Writes</dt><dd>Go, Node.js, Python</dd></div>
+      <div><dt>Runs it on</dt><dd>AWS, Kubernetes, Kafka, Redis</dd></div>
+      <div><dt>Studied</dt><dd>MS Computer Science, University of San Francisco</dd></div>
+      <div><dt>Find me</dt><dd>
+        <a href="https://github.com/delta619" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/ashutoshmalla" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:ashutoshjk97@gmail.com">Email</a>
+      </dd></div>
+    </dl>
+  </div>
+</section>
+
+<nav class="contents wrap" id="contents" aria-label="Projects on this page">
+  <h2 class="label">On the bench</h2>
+  <ol>
+    <li><a href="#go-dfs"><span class="when">2023</span><span class="what">A distributed file system in Go</span><span class="gist">HDFS-style storage across twelve machines</span></a></li>
+    <li><a href="#doodle"><span class="when">2024</span><span class="what">A shared canvas without WebSockets</span><span class="gist">Drawing together over long polling</span></a></li>
+    <li><a href="#todays-tasks"><span class="when">2024–26</span><span class="what">A to-do list that changes with the tab</span><span class="gist">Chrome extension, one list per website</span></a></li>
+    <li><a href="#xp-touch-bar"><span class="when">2026</span><span class="what">Something for the Touch Bar to do</span><span class="gist">Live audio visualizer for macOS</span></a></li>
+    <li><a href="#pintnetwork"><span class="when">2020–21</span><span class="what">PintNetwork</span><span class="gist">Matching plasma donors with COVID-19 patients</span></a></li>
+  </ol>
+</nav>
+
+<!-- 1 · Go DFS -->
+<article class="entry wrap" id="go-dfs" aria-labelledby="dfs-title">
+  <aside class="rail" aria-label="About this project">
+    <span class="no" aria-hidden="true">1</span>
+    <p>Spring 2023</p>
+    <p>Go<br>Protocol Buffers<br>Bitcask</p>
+    <p><a href="https://github.com/delta619/go-dfs" target="_blank" rel="noopener noreferrer">Code on GitHub</a></p>
+  </aside>
+
+  <div class="body">
+    <div class="text">
+      <h2 id="dfs-title">A distributed file system in Go</h2>
+      <p>This started as a big data course project at USF: build something shaped like HDFS, then run it on the department’s cluster. Mine ran on twelve storage machines named orion01 to orion12, which is why the simulation further down uses those names.</p>
+      <p>A client cuts a file into 7&nbsp;MB chunks and sends them to storage nodes. One controller remembers which node holds which chunk, keeps that in a Bitcask store on disk, and makes sure every chunk exists on three nodes. Everything talks protobuf over TCP.</p>
+      <p>The part I’d show someone first is how the controller picks a home for the next chunk.</p>
+    </div>
+
+    <figure class="fig fig-code">
+<pre tabindex="0"><code><span class="k">func</span> getRouteChunk() (<span class="k">string</span>, <span class="k">error</span>) {
+	efficiencyConstant := <span class="k">float64</span>(0)
+	mostEfficientNode := <span class="s">""</span>
+
+	<span class="k">for</span> node, value := <span class="k">range</span> registrationMap {
+		<span class="k">if</span> value == 1 { <span class="c">// node is active</span>
+			space := getDiskSpace(node)
+			requests := getNodeRequests(node)
+<mark>			efficiency := float64(space) / (float64(requests) + 1)</mark>
+			<span class="k">if</span> efficiency &gt; efficiencyConstant || mostEfficientNode == <span class="s">""</span> {
+				efficiencyConstant = efficiency
+				mostEfficientNode = node
+			}
+		}
+	}
+	<span class="c">…</span>
+}</code></pre>
+      <figcaption><b>Fig. 1</b> From <a href="https://github.com/delta619/go-dfs/blob/main/app/controller/controller.go" target="_blank" rel="noopener noreferrer">app/controller/controller.go</a>, unedited apart from the cut at the end.</figcaption>
+    </figure>
+
+    <div class="text">
+      <p>Free disk space divided by the number of requests the node has already been handed, highest wins. A big empty machine doesn’t get everything just because it is big.</p>
+      <aside class="note">Six seconds against a five-second heartbeat is tight. One late beat and the controller starts copying data that was never lost.</aside>
+      <p>Failure handling is blunt. Every node sends a heartbeat each five seconds, carrying its free space and request count. The controller looks at the clock every two seconds, and any node that has been quiet for more than six is written off. For each chunk that node held, a surviving copy is told to send itself somewhere new.</p>
+      <p>You can watch that happen here. Pick a node, stop it, and wait.</p>
+    </div>
+
+    <figure class="fig fig-live dfs-demo" aria-labelledby="dfs-cap">
+      <div class="dfs-controller">
+        <div class="dfs-controller-id">
+          <strong>Controller</strong>
+          <span>sweeps every 2&nbsp;s · timeout 6&nbsp;s · 3 copies of each chunk</span>
+        </div>
+        <ol class="dfs-log" id="dfs-log" role="log" aria-live="polite" aria-label="Controller log"></ol>
+      </div>
+      <div class="dfs-nodes" id="dfs-nodes"></div>
+      <div class="controls">
+        <button class="key" id="dfs-reset" type="button">Reset cluster</button>
+        <span class="hint">dataset.csv, 28&nbsp;MB, in 4 chunks</span>
+      </div>
+      <figcaption id="dfs-cap"><b>Fig. 2</b> A simulation, running in your browser in real time. The intervals and the scoring rule are the ones in the code; the five nodes and their numbers are made up.</figcaption>
+    </figure>
+  </div>
+</article>
+
+<!-- 2 · Collaborative Doodle -->
+<article class="entry wrap" id="doodle" aria-labelledby="doodle-title">
+  <aside class="rail" aria-label="About this project">
+    <span class="no" aria-hidden="true">2</span>
+    <p>June 2024</p>
+    <p>Node.js, Express<br>MongoDB<br>Angular, p5.js</p>
+    <p><a href="https://github.com/delta619/concurrency_drawing" target="_blank" rel="noopener noreferrer">Server code</a><br><a href="https://github.com/delta619/concurrency_drawing_ui" target="_blank" rel="noopener noreferrer">Client code</a></p>
+  </aside>
+
+  <div class="body">
+    <div class="text">
+      <h2 id="doodle-title">A shared canvas without WebSockets</h2>
+      <p>Open a link and you get a room with a six-character ID. Draw, and anyone else holding that link sees your lines appear and can add their own. Someone who turns up late gets the whole drawing replayed to them first.</p>
+      <aside class="note">Every held response sits in one Node process, keyed by username. The README’s first note is “Use unique usernames”, and this is why.</aside>
+      <p>I built it on long polling. Each browser keeps a single <code>POST /wait</code> open, and the server simply doesn’t reply until it has strokes to hand over. Drawing is batched at both ends: the client collects points for 100&nbsp;ms before sending them, and every 100&nbsp;ms the server empties its queue into every response that is waiting. The browsers then ask again.</p>
+      <p>Strokes are also written to MongoDB every three seconds, which is where the replay for latecomers comes from.</p>
+    </div>
+
+    <figure class="fig fig-live doodle-demo" aria-labelledby="doodle-cap">
+      <div class="doodle-stage">
+        <div class="pad">
+          <span class="pad-label">Your browser</span>
+          <canvas id="pad-local" aria-label="Your canvas. Drag to draw, or use the Draw a sample stroke button."></canvas>
+        </div>
+        <ol class="wire" id="wire" aria-label="What travels between the two browsers">
+          <li data-step="buffer"><span>client buffer</span><b id="wire-buffer">0 pts</b></li>
+          <li data-step="update"><span>POST /update</span><b id="wire-update">idle</b></li>
+          <li data-step="queue"><span>server queue</span><b id="wire-queue">0 batches</b></li>
+          <li data-step="wait"><span>POST /wait</span><b id="wire-wait">held open</b></li>
+        </ol>
+        <div class="pad">
+          <span class="pad-label">Someone else’s</span>
+          <canvas id="pad-remote" aria-label="The other person’s canvas, showing your strokes as they arrive."></canvas>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="key" id="doodle-sample" type="button">Draw a sample stroke</button>
+        <button class="key" id="doodle-clear" type="button">Clear</button>
+        <label class="switch"><input type="checkbox" id="doodle-slow"> <span>Slow it down 10×</span></label>
+        <span class="hint" id="doodle-status" role="status">Draw in the left box.</span>
+      </div>
+      <figcaption id="doodle-cap"><b>Fig. 3</b> A simulation with no network calls. The right-hand canvas only gets what would arrive over the wire, replayed at 50&nbsp;ms a point like the real client does. Slow it down to see the four steps separately.</figcaption>
+    </figure>
+  </div>
+</article>
+
+<!-- 3 · Todays Tasks -->
+<article class="entry wrap" id="todays-tasks" aria-labelledby="tasks-title">
+  <aside class="rail" aria-label="About this project">
+    <span class="no" aria-hidden="true">3</span>
+    <p>Feb 2024, reworked March 2026</p>
+    <p>Chrome extension<br>Manifest V3<br>Google Drive API</p>
+    <p><a href="https://github.com/delta619/chrome_extension_todays_tasks" target="_blank" rel="noopener noreferrer">Code on GitHub</a></p>
+  </aside>
+
+  <div class="body">
+    <div class="text">
+      <h2 id="tasks-title">A to-do list that changes with the tab</h2>
+      <p>I built this one for myself. A single long list follows you around all day, and most of it has nothing to do with the page in front of you. Todays Tasks keeps a separate list for each website instead. Open it on GitHub and you see GitHub tasks. Open it on Figma and you see Figma tasks. The repository describes it as a simple, fast extension for people with ADHD.</p>
+    </div>
+
+    <div class="pair">
+      <figure class="fig fig-shot">
+        <img src="images/todays-tasks-github.jpg" width="1280" height="800" loading="lazy" alt="The Todays Tasks popup open over a GitHub page, showing four tasks: Review PR #42, Update unit tests, Merge feature branch, and Write release notes.">
+        <figcaption><b>Fig. 4</b> The real thing, from the extension’s store screenshots.</figcaption>
+      </figure>
+
+      <figure class="fig fig-live tasks-demo" aria-labelledby="tasks-cap">
+        <div class="browser">
+          <div class="browser-tabs" role="group" aria-label="Pretend you are on">
+            <button type="button" data-site="github.com" aria-pressed="true">github.com</button>
+            <button type="button" data-site="figma.com" aria-pressed="false">figma.com</button>
+            <button type="button" data-site="youtube.com" aria-pressed="false">youtube.com</button>
+          </div>
+          <div class="popup">
+            <div class="popup-top">
+              <span id="tasks-hint">Tasks for this site only</span>
+              <button type="button" id="tasks-all" aria-pressed="false" aria-label="Show tasks for all sites">
+                <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><rect x="1" y="1" width="4" height="4" rx="1"/><rect x="7" y="1" width="4" height="4" rx="1"/><rect x="1" y="7" width="4" height="4" rx="1"/><rect x="7" y="7" width="4" height="4" rx="1"/></svg>
+              </button>
+            </div>
+            <form id="tasks-form" autocomplete="off">
+              <label class="visually-hidden" for="tasks-input">New task</label>
+              <input id="tasks-input" type="text" maxlength="30" placeholder="New task" enterkeyhint="done">
+            </form>
+            <div id="tasks-list" class="tasks-list"></div>
+          </div>
+        </div>
+        <figcaption id="tasks-cap"><b>Fig. 5</b> A copy of the popup that runs here. Switch sites, add a task, or press the grid for every site at once. It forgets everything when you reload.</figcaption>
+      </figure>
+    </div>
+
+    <div class="text">
+      <aside class="note">Tasks are matched by their text, which is capped at 30 characters. There are no IDs anywhere.</aside>
+      <p>There is no server behind it. Tasks are saved in the browser first. If you sign in, they also go into one <code>tasks.json</code> in the extension’s own hidden folder in your Google Drive, which is the only part of Drive it is permitted to touch.</p>
+      <p>When a laptop comes back online, whatever it saved locally is merged into the Drive copy. Where two devices disagree about whether a task is done, the later edit wins, and a small banner tells you how many tasks changed.</p>
+    </div>
+  </div>
+</article>
+
+<!-- 4 · XP Touch Bar -->
+<article class="entry entry-dark" id="xp-touch-bar" aria-labelledby="xp-title">
+  <div class="wrap entry-inner">
+    <aside class="rail" aria-label="About this project">
+      <span class="no" aria-hidden="true">4</span>
+      <p>March 2026</p>
+      <p>Swift<br>ScreenCaptureKit<br>Accelerate, SpriteKit</p>
+      <p><a href="https://github.com/delta619/XPtouchbar" target="_blank" rel="noopener noreferrer">Code and README</a></p>
+    </aside>
+
+    <div class="body">
+      <div class="text">
+        <h2 id="xp-title">Something for the Touch Bar to do</h2>
+        <p>The Touch Bar on my MacBook mostly sat idle, so I wrote a menu bar app that turns it into an audio visualizer for whatever is playing. It has fourteen modes and eight colour themes.</p>
+      </div>
+
+      <figure class="fig fig-live xp-demo" aria-labelledby="xp-cap">
+        <div class="touchbar"><canvas id="xp-canvas" aria-label="Illustration of the Touch Bar visualizer"></canvas></div>
+        <div class="controls xp-controls">
+          <button class="key" id="xp-play" type="button" aria-pressed="false">Play</button>
+          <div class="seg" role="group" aria-label="Visualizer mode" id="xp-modes">
+            <button type="button" data-mode="bars" aria-pressed="true">Bars</button>
+            <button type="button" data-mode="mirror" aria-pressed="false">Mirror</button>
+            <button type="button" data-mode="line" aria-pressed="false">Line</button>
+            <button type="button" data-mode="dots" aria-pressed="false">Dots</button>
+          </div>
+          <div class="seg" role="group" aria-label="Colour theme" id="xp-themes">
+            <button type="button" data-theme="classic" aria-pressed="true">Classic</button>
+            <button type="button" data-theme="ocean" aria-pressed="false">Ocean</button>
+            <button type="button" data-theme="sunset" aria-pressed="false">Sunset</button>
+            <button type="button" data-theme="ice" aria-pressed="false">Ice</button>
+          </div>
+        </div>
+        <figcaption id="xp-cap"><b>Fig. 6</b> Four of the modes and four of the themes, drawn from a generated signal. Nothing here listens to your audio.</figcaption>
+      </figure>
+
+      <div class="text">
+        <aside class="note">512 samples at 48&nbsp;kHz is a little under 11&nbsp;ms, so the picture is never much further behind the sound than that.</aside>
+        <p>Getting at system audio on a Mac normally means installing a virtual audio driver. I used ScreenCaptureKit instead, which can tap whatever is playing with nothing extra installed. The trade is the permission dialog, where macOS asks for “Screen &amp; System Audio Recording”.</p>
+        <p>From there the samples go through a 4096-point FFT that re-runs every 512 samples. SpriteKit draws the result into a strip 30 points tall, and a private framework, DFRFoundation, puts that strip on the bar.</p>
+        <ol class="pipeline" aria-label="How audio reaches the Touch Bar">
+          <li>System audio</li>
+          <li>ScreenCaptureKit</li>
+          <li>4096-point FFT</li>
+          <li>SpriteKit scene</li>
+          <li>Touch Bar</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- 5 · PintNetwork -->
+<article class="entry wrap" id="pintnetwork" aria-labelledby="pint-title">
+  <aside class="rail" aria-label="About this project">
+    <span class="no" aria-hidden="true">5</span>
+    <p>July 2020 to May 2021</p>
+    <p>Angular<br>Node.js, MongoDB<br>SMS and email</p>
+    <p><a href="https://www.dailyexcelsior.com/jammu-boy-develops-website-to-connect-donors-corona-patients-for-plasma-transfusion/" target="_blank" rel="noopener noreferrer">Daily Excelsior article</a><br><a href="https://github.com/delta619/pintnetwork_india_bk" target="_blank" rel="noopener noreferrer">Backend code</a></p>
+  </aside>
+
+  <div class="body">
+    <div class="text">
+      <h2 id="pint-title">PintNetwork</h2>
+      <p>In the middle of 2020, hospitals in India were treating some COVID-19 patients with plasma from people who had already recovered. Two doctors in Mumbai, Dr Neil Pinto and Dr Kareena, saw that willing donors and the patients who needed them had no straightforward way to find each other.</p>
+      <p>They brought the problem and the medical criteria. I wrote the web application, front and back, in about a week.</p>
+      <p>Donors and patients registered on pintnetwork.com. A donor’s answers were checked against the doctors’ rules, and when a donor and a patient were matched, both got an SMS and an email with what they needed to reach each other.</p>
+      <aside class="note">A donor who fails the check is still saved, only flagged. A person makes the final call, not the form.</aside>
+    </div>
+
+    <figure class="fig fig-code">
+<pre tabindex="0"><code>donor.healthy =
+  donor.hiv != 1 &amp;&amp;
+  donor.mosquito != 1 &amp;&amp;
+  donor.days14over == 1 &amp;&amp;
+  donor.pregnant == 0 &amp;&amp;
+  donor.age &gt;= 18 &amp;&amp;
+  donor.age &lt;= 65;</code></pre>
+      <figcaption><b>Fig. 7</b> The eligibility check, from <a href="https://github.com/delta619/pintnetwork_india_bk/blob/master/controller/donorController.js" target="_blank" rel="noopener noreferrer">controller/donorController.js</a>.</figcaption>
+    </figure>
+
+    <div class="text">
+      <p>Daily Excelsior <a href="https://www.dailyexcelsior.com/jammu-boy-develops-website-to-connect-donors-corona-patients-for-plasma-transfusion/" target="_blank" rel="noopener noreferrer">wrote about it</a> on 13 July 2020. A week after launch, it reported, 66 donors and 65 patients had registered.</p>
+      <p>I kept working on it after that. The history of the public backend runs to May 2021: matching by city, then by blood group, then a rewrite during the second wave. In that version a coordinator confirms each match from an admin view, and the messages go out from there.</p>
+      <p>The site is offline now. What is left is the code and the article.</p>
+    </div>
+  </div>
+</article>
+
+<p class="more wrap"><a href="projects.html">The archive has the rest</a>, including a Kubernetes multi-app template, a Bitly clone and an ISP throttling detector.</p>
+
+<section class="entry wrap about" id="about" aria-labelledby="about-title">
+  <aside class="rail" aria-label="Links">
+    <p><a href="https://talent.toptal.com/resume/developers/ashutosh-malla" target="_blank" rel="noopener noreferrer">Résumé on Toptal</a><br><a href="https://www.linkedin.com/in/ashutoshmalla" target="_blank" rel="noopener noreferrer">LinkedIn</a><br><a href="https://github.com/delta619" target="_blank" rel="noopener noreferrer">GitHub</a><br><a href="https://medium.com/@deltareaper619" target="_blank" rel="noopener noreferrer">Medium</a></p>
+  </aside>
+
+  <div class="body">
+    <div class="text">
+      <h2 id="about-title">The day job</h2>
+      <p>I’m a backend and platform engineer. Day to day that means designing APIs, wiring services together with events, and keeping them running on AWS.</p>
+      <p>That work has been on multi-tenant hotel platforms and on nationwide delivery infrastructure, with a fair amount of API integration and security hardening along the way. I have an MS in Computer Science from the University of San Francisco, and before that I studied at Mumbai University.</p>
+      <p>The projects above have one thing in common. Each made me build a part I would normally take for granted: replication, real-time sync, an audio pipeline.</p>
+    </div>
+
+    <table class="cv">
+      <caption class="visually-hidden">Summary for recruiters</caption>
+      <tbody>
+        <tr><th scope="row">Focus</th><td>Backend and platform systems, secure APIs, event-driven services, distributed systems</td></tr>
+        <tr><th scope="row">Domains</th><td>Multi-tenant hotel platforms, nationwide delivery infrastructure, API integrations, security hardening</td></tr>
+        <tr><th scope="row">Languages</th><td>Go, Node.js, Python</td></tr>
+        <tr><th scope="row">Infrastructure</th><td>AWS, Kubernetes, Docker, Kafka, Redis, PostgreSQL</td></tr>
+        <tr><th scope="row">Education</th><td>MS Computer Science, University of San Francisco. Mumbai University, 2019</td></tr>
+        <tr><th scope="row">Full history</th><td><a href="https://talent.toptal.com/resume/developers/ashutosh-malla" target="_blank" rel="noopener noreferrer">Résumé on Toptal</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="contact wrap" id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title" class="label">Write to me</h2>
+  <p class="contact-line">If you’re hiring for backend work, or you think I got one of these decisions wrong, I’d like to hear it.</p>
+  <p class="contact-email-row">
+    <a class="contact-email" href="mailto:ashutoshjk97@gmail.com">ashutoshjk97@gmail.com</a>
+    <button class="key" id="copy-email" type="button" data-email="ashutoshjk97@gmail.com">Copy address</button>
+    <span class="visually-hidden" id="copy-status" role="status"></span>
+  </p>
+</section>
+
+</main>
+
+<footer class="colophon wrap">
+  <a class="signature" href="#top" aria-label="delta619, back to top"><svg viewBox="0 0 20 18" aria-hidden="true"><path d="M10 2.2 18 16H2Z"/></svg>delta619</a>
+  <span>The Builder’s Lab. Plain HTML, CSS and JavaScript, no framework and no build step.</span>
+  <a href="#top">Top</a>
+</footer>
+</body>
+</html>
